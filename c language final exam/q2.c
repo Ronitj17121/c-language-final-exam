@@ -1,30 +1,46 @@
+
 #include<stdio.h>
 #include<conio.h>
-// c program to find sum of element of a matrix.
-void main()
+
+int main()
 {
-
-	int row,coloum,sum,n;
+	//wap to sum of the elements of a matrix...
 	
-	printf("enter row of array : ");
-	scanf("%d",&row);
-	printf("enter coloum of array : ");
-	scanf("%d",&coloum);
+	int r,c,n,j,sum;
 	
-
+	printf("Enter the number Of  rows in the array :");
+	scanf("%d",&r);
+	
+	printf("Enter the number Of  columns in the array :");
+	scanf("%d",&c);
+	
 	int a[r][c];
 	
-	for(r=1; r<=n; r++)
+	for(n=0; n<r; n++)
 	{
-		for(c=1;c<=n;c++)
+		for(j=0; j<c; j++)
 		{
-			printf("a[r][c]");
+			printf("Enter The Value Of a[%d][%d] : ",n,j);
+			scanf("%d",&a[n][j]);
 		}
-		printf("\n ");
+		printf("\n");
 	}
 	
-	sum = row * coloum;
-	
-	printf("%d * %d =%d",row,coloum,sum);
-	
+	for(n=0; n<r; n++)
+	{
+		for(j=0; j<c; j++)
+		{
+			printf("enter the value of a[%d][%d] :"n,j)
+		}
+	}
+	for(n=0; n<r; n++)
+	{
+		for(j=0; j<c; j++)
+		{
+			sum=sum+a[n][j];
+		}	
+	}
+	printf("sum is %d",sum);
+
+	return 0;	
 }
